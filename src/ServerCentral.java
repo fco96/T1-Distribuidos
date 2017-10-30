@@ -86,30 +86,29 @@ public class ServerCentral {
             try {
                 while (true) {
                     System.out.println("Seleccione una opción:");
-                    System.out.println("1) Agregar distritos trost");
-                    System.out.println("2) Santiago");
-                    System.out.println("3) Empezar a servir");
+                    System.out.println("1) Agregar distrito");
+                    System.out.println("2) Empezar a servir");
                     String opcion = br.readLine();
                     if ("1".equals(opcion)) {
                         System.out.println("[Servidor central] Nombre distrito: ");
-                        //String nombre = br.readLine();
-                        String nombre = "Trost";
+                        String nombre = br.readLine();
+                        //String nombre = "Trost";
 
                         System.out.println("[Servidor central] IP Multicast: ");
-                        //String ipMulti = br.readLine();
-                        String ipMulti = "224.1.1.1";
+                        String ipMulti = br.readLine();
+                        //String ipMulti = "224.1.1.1";
 
                         System.out.println("[Servidor central] Puerto Multicast: ");
-                        //int puertoMulti = Integer.parseInt(br.readLine());
-                        int puertoMulti = 4545;
+                        int puertoMulti = Integer.parseInt(br.readLine());
+                        //int puertoMulti = 4545;
 
                         System.out.println("[Servidor central] IP Peticiones: ");
-                        //String ipPeticiones = br.readLine();
-                        String ipPeticiones = "127.0.0.1";
+                        String ipPeticiones = br.readLine();
+                        //String ipPeticiones = "127.0.0.1";
 
                         System.out.println("[Servidor central] Puerto Peticiones: ");
-                        //int puertoPeticiones = Integer.parseInt(br.readLine());
-                        int puertoPeticiones = 3434;
+                        int puertoPeticiones = Integer.parseInt(br.readLine());
+                        //int puertoPeticiones = 3434;
 
 
                         distritos.add(new distrito(nombre, ipMulti, puertoMulti, ipPeticiones, puertoPeticiones));
@@ -117,32 +116,6 @@ public class ServerCentral {
 
                     }
                     else if ("2".equals(opcion)) {
-                        System.out.println("[Servidor central] Nombre distrito: ");
-                        //String nombre = br.readLine();
-                        String nombre = "Santiago";
-
-                        System.out.println("[Servidor central] IP Multicast: ");
-                        //String ipMulti = br.readLine();
-                        String ipMulti = "224.1.1.1";
-
-                        System.out.println("[Servidor central] Puerto Multicast: ");
-                        //int puertoMulti = Integer.parseInt(br.readLine());
-                        int puertoMulti = 4546;
-
-                        System.out.println("[Servidor central] IP Peticiones: ");
-                        //String ipPeticiones = br.readLine();
-                        String ipPeticiones = "127.0.0.1";
-
-                        System.out.println("[Servidor central] Puerto Peticiones: ");
-                        //int puertoPeticiones = Integer.parseInt(br.readLine());
-                        int puertoPeticiones = 3435;
-
-
-                        distritos.add(new distrito(nombre, ipMulti, puertoMulti, ipPeticiones, puertoPeticiones));
-                        //System.out.println("Los datos ingresados son" + nombre + " " + ipMulti + ":" + puertoMulti + " " + ipPeticiones + ":" + puertoPeticiones);
-
-                    }
-                    else if ("3".equals(opcion)) {
                         /*System.out.println("SE PROCEDE A MOSTRAR LOS DISTRITOS");
                         for (distrito d : distritos) {
                             System.out.println(d);

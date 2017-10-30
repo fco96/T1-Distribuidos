@@ -10,33 +10,33 @@ public class ServerDistrito {
                 br = new BufferedReader(new InputStreamReader(System.in));
 
                 System.out.println("[Distrito] Nombre distrito: ");
-                //nombre = br.readLine();
-                nombre = "Trost";
+                nombre = br.readLine();
+                //nombre = "Trost";
 
                 System.out.println("[Distrito "+nombre+"] IP Servidor Central: ");
-                //ipServerCentral = InetAddress.getByName(br.readLine());
-                ipServerCentral = InetAddress.getByName("127.0.0.1");
+                ipServerCentral = InetAddress.getByName(br.readLine());
+                //ipServerCentral = InetAddress.getByName("127.0.0.1");
 
                 System.out.println("[Distrito "+nombre+"] IP Multicast: ");
-                //ipMulti = InetAddress.getByName(br.readLine());
-                ipMulti = InetAddress.getByName("224.1.1.1");
+                ipMulti = InetAddress.getByName(br.readLine());
+                //ipMulti = InetAddress.getByName("224.1.1.1");
 
                 System.out.println("[Distrito "+nombre+"] Puerto Multicast: ");
-                //puertoMulti = Integer.parseInt(br.readLine());
-                puertoMulti = 4545;
+                puertoMulti = Integer.parseInt(br.readLine());
+                //puertoMulti = 4545;
 
                 System.out.println("[Distrito "+nombre+"] IP Peticiones: ");
-                //ipPeticiones = InetAddress.getByName(br.readLine());
-                ipPeticiones = InetAddress.getByName("127.0.0.1");
+                ipPeticiones = InetAddress.getByName(br.readLine());
+                //ipPeticiones = InetAddress.getByName("127.0.0.1");
 
                 System.out.println("[Distrito "+nombre+"] Puerto Peticiones: ");
-                //puertoPeticiones = Integer.parseInt(br.readLine());
-                puertoPeticiones = 3434;
+                puertoPeticiones = Integer.parseInt(br.readLine());
+                //puertoPeticiones = 3434;
 
                 //Generación socket para atender
 
-                //socket = new DatagramSocket(puertoPeticiones, ipPeticiones);
-                socket = new DatagramSocket(puertoPeticiones);
+                socket = new DatagramSocket(puertoPeticiones, ipPeticiones);
+                //socket = new DatagramSocket(puertoPeticiones);
 
                 //Generación socked multicast
                 mcsocket = new DatagramSocket();
