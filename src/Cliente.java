@@ -56,12 +56,12 @@ public class Cliente {
         public void run() {
             try {
                 System.out.println("[Cliente] Ingresar IP servidor central");
-                //ipServerCentral = InetAddress.getByName(br.readLine());
-                ipServerCentral = InetAddress.getByName("127.0.0.1");
+                ipServerCentral = InetAddress.getByName(br.readLine());
+                //ipServerCentral = InetAddress.getByName("127.0.0.1");
 
                 System.out.println("[Cliente] Ingresar puerto servidor central");
-                //puertoServerCentral = Integer.parseInt(br.readLine());
-                puertoServerCentral = 8080;
+                puertoServerCentral = Integer.parseInt(br.readLine());
+                //puertoServerCentral = 8080;
 
                 System.out.println("[Cliente] Ingresar nombre del distrito a investigar");
                 nombreDistrito = br.readLine();
